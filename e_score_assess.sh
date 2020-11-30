@@ -5,11 +5,11 @@
 
 
 #Fetch trimmed fasta files
-for h in `ls ./trimmed_reads2.0_fasta/ | sort | uniq`; do
+for h in `ls ./trimmed_reads/ | sort | uniq`; do
 echo ${h}
 
 #Run blastn and generate an output file with sequence ID and evalues
-blastn -query ${h}_indexed -db reference -outfmt 10 |sed 's/,/\t/g'|cut -f1,2,11|sed 's/\t/:/g'|sort -u -t : -k1,1|uniq  >  ${h}_eval_w_ID 
+blastn -query ${h} -db reference -outfmt 10 |sed 's/,/\t/g'|cut -f1,2,11|sed 's/\t/:/g'|sort -u -t : -k1,1|uniq  >  ${h}_eval_w_ID 
 echo blast finished
 
 #Isolate e-values
