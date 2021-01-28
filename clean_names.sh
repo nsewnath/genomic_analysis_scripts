@@ -1,7 +1,7 @@
 
 #Quickly rename messy file names using sed pipeline
 #Neeka Sewnath
-#nsewnath@bear.flmnh.ufl.edu
+#nsewnath@ufl.edu
 
 #### Fetch samples #### 
 # Add your sample path after ls, use * pattern to grab multiple files
