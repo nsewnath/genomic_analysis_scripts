@@ -1,2 +1,2 @@
 # genomic_analysis_scripts
-Scripts generated for various genomic analyses
+Scripts generated for analyses and customization. 
