@@ -57,7 +57,7 @@ def get_args():
 
 def label_rename(label): 
     """
-    Renames trait names with trait dictionary
+    Renames label names with label dictionary
     """
 
     label_dict = labels.set_index("old_id")["new_id"].to_dict()
